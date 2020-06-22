@@ -1,30 +1,39 @@
+alias ..="cd .."
+alias cd..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# mv, rm, cp
+alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+
+alias chmox='chmod -x'
+
+alias v="vim"
+alias ungz="gunzip -k"
+alias hosts='subl /etc/hosts'
+
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
-
-# Laravel
-alias a="php artisan"
-alias fresh="php artisan migrate:fresh --seed"
-alias seed="php artisan db:seed"
+alias code="cd $HOME/code"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
-alias watch="npm run watch"
 
 # Vagrant
 alias v="vagrant global-status"
@@ -43,6 +52,7 @@ alias docker-composer="docker-compose"
 #dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 
 # Git
+alias g="git"
 alias gst="git status"
 alias gb="git branch"
 alias gc="git checkout"

@@ -21,7 +21,6 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe'
-brew 'svn'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
@@ -35,8 +34,6 @@ brew 'gifsicle'
 
 # Development
 brew 'php'
-brew 'php@7.3'
-brew 'php@7.2'
 brew 'composer'
 brew 'imagemagick'
 brew 'libmemcached'
@@ -48,46 +45,39 @@ brew 'redis'
 brew 'yarn'
 
 # Apps
-cask '1password'
-cask '1password-cli'
-cask 'aerial'
 cask 'alfred'
-cask 'bartender'
-cask 'caffeine'
-cask 'dbngin'
 cask 'discord'
 cask 'docker'
-cask 'figma'
 cask 'firefox'
-cask 'github'
+cask 'android-studio'
+cask 'android-platform-tools'
+cask 'android-sdk'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'imageoptim'
-cask 'insomnia'
 cask 'java'
-cask 'mysqlworkbench'
-cask 'nvidia-geforce-now'
-cask 'phpstorm'
-cask 'screenflow'
 cask 'skype'
 cask 'slack'
-cask 'steam'
 cask 'sublime-text'
 cask 'tableplus'
-cask 'telegram-desktop'
-cask 'there'
 cask 'the-unarchiver'
-cask 'tinkerwell'
-cask 'tor-browser'
-cask 'transmission'
 cask 'transmit'
 cask 'vagrant'
 cask 'virtualbox' # Might need to allow access in Security settings
 cask 'virtualbox-extension-pack'
-cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
+cask 'coconutbattery'
+cask 'iterm2'
+cask 'little-snitch'
+cask 'zoomus'
+cask 'dropbox'
+cask 'blackhole'
+cask 'handbrake'
+cask 'flux'
+cask 'adobe-creative-cloud'
+cask 'cleanmymac'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -105,12 +95,16 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+cask 'font-ibm-plex'
 
 # Mac App Store
-mas 'Byword', id: 420212497
-mas 'Giphy Capture', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
-mas 'Spark', id: 1176895641
-mas 'Things', id: 904280696
-mas 'Tweetbot', id: 1384080005
+mas 'Pages', id: 409201541
+mas 'Microsoft To Do', id: 1274495053
+mas 'MainStage 3', id: 634159523
+mas 'Dato', id: 1470584107
+mas 'Moom', id: 419330170
+mas 'Wake Up Time', id: 495945638
+mas 'Logic Pro X', id: 634148309
+mas 'Amphetamine', id: 937984704
