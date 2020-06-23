@@ -12,6 +12,7 @@ brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'gh'
+brew 'svn'
 brew 'git'
 brew 'gnupg2'
 brew 'grep'
@@ -20,7 +21,6 @@ brew 'hub'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-brew 'stripe'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
@@ -77,8 +77,6 @@ cask 'dropbox'
 cask 'blackhole'
 cask 'handbrake'
 cask 'flux'
-cask 'adobe-creative-cloud'
-cask 'cleanmymac'
 cask 'caprine'
 
 # Quicklook
