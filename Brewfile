@@ -79,6 +79,7 @@ cask 'handbrake'
 cask 'flux'
 cask 'adobe-creative-cloud'
 cask 'cleanmymac'
+cask 'caprine'
 
 # Quicklook
 cask 'qlcolorcode'
