@@ -37,6 +37,13 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
+# Avoid: Last login: Fri Jun 26 21:29:04 on ttys002
+touch $HOME/.hushlogin
+
+# Set Git Config User
+git config --global user.name "Francisco Madeira"
+git config --global user.email "xico2k@gmail.com"
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
