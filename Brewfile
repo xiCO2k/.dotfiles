@@ -75,6 +75,7 @@ cask 'blackhole'
 cask 'handbrake'
 cask 'flux'
 cask 'caprine'
+cask 'stremio'
 
 # Quicklook
 cask 'qlcolorcode'
