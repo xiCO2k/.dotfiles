@@ -93,6 +93,7 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 cask 'font-ibm-plex'
+cask 'font-montserrat'
 
 # Mac App Store
 mas 'Keynote', id: 409183694
