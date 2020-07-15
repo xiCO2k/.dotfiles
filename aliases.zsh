@@ -17,6 +17,7 @@ alias v="vim"
 alias ungz="gunzip -k"
 alias hosts='subl /etc/hosts'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
@@ -35,17 +36,8 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 
-# Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
-
 # Docker
 alias docker-composer="docker-compose"
 
 # Git
 alias g="git"
-alias wip="commit wip"
