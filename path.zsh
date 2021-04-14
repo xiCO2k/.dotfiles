@@ -11,6 +11,10 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export PATH="$HOME/Library/Android/sdk/emulator:$HOME/Library/Android/sdk/tools:$PATH"
 
+# Add Golang
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 # Make sure coreutils are loaded before system commands
 # I've disabled this for now because I only use "ls" which is
 # referenced in my aliases.zsh file directly.

@@ -37,7 +37,8 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 
 # Docker
-alias docker-composer="docker-compose"
+alias docker-composer="docker compose"
+alias docker-compose="docker compose"
 
 # Git
 alias g="git"
