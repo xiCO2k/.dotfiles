@@ -35,6 +35,7 @@ brew 'gifsicle'
 
 # Development
 brew 'php'
+brew 'php@7.4'
 brew 'composer'
 brew 'imagemagick'
 brew 'mysql'

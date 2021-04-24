@@ -42,3 +42,6 @@ alias docker-compose="docker compose"
 
 # Git
 alias g="git"
+
+# Brew
+alias b="brew"
