@@ -43,6 +43,7 @@ brew 'nginx'
 brew 'node'
 brew 'redis'
 brew 'yarn'
+brew 'telnet'
 
 # Apps
 cask 'alfred'
