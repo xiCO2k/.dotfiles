@@ -27,8 +27,6 @@ alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-dire
 
 # Directories
 alias dotfiles="cd $DOTFILES"
-alias library="cd $HOME/Library"
-alias code="cd $HOME/code"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
@@ -39,9 +37,13 @@ alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 # Docker
 alias docker-composer="docker compose"
 alias docker-compose="docker compose"
+alias dc="docker compose"
 
 # Git
 alias g="git"
 
 # Brew
 alias b="brew"
+
+# Visual Studio Code
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"

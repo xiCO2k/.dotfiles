@@ -26,6 +26,9 @@ pecl install imagick
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
+# Install global Node packages
+/usr/local/bin/npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli @prettier/plugin-php
+
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir $HOME/code
