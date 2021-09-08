@@ -31,7 +31,6 @@ alias dotfiles="cd $DOTFILES"
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias artisan="php artisan"
-alias mf="artisan migrate:fresh"
 alias mfs="artisan migrate:fresh --seed"
 alias p="pest"
 alias pf="pest --filter "
