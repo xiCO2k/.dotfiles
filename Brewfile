@@ -43,6 +43,7 @@ brew 'node'
 brew 'redis'
 brew 'yarn'
 brew 'telnet'
+brew 'wrk'
 
 # Apps
 cask 'alfred'
