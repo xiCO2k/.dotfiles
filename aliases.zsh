@@ -34,6 +34,7 @@ alias artisan="php artisan"
 alias mfs="artisan migrate:fresh --seed"
 alias p="pest"
 alias pf="pest --filter "
+alias pp="pest --parallel"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"

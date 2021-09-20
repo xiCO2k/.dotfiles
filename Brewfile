@@ -25,6 +25,7 @@ brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 brew 'kubectl'
+brew 'helm'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
