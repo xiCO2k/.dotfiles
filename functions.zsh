@@ -10,3 +10,13 @@ function tinker() {
        php artisan tinker --execute="dd($1);"
   fi
 }
+
+function hidePrompt() {
+    export HIDE_PROMPT_FOLDER=true
+    reloadshell
+}
+
+function showPrompt() {
+    export HIDE_PROMPT_FOLDER=false
+    reloadshell
+}
