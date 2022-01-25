@@ -79,9 +79,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-if ($HIDE_PROMPT_FOLDER); then
-    PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-    PROMPT+='%{$reset_color%} '
+if [ "$HIDE_PROMPT_FOLDER" = 1 ]; then
+    PROMPT="%(?:%{$fg_bold[green]%}✗ :%{$fg_bold[red]%}✗ )"
+    PROMPT+='%{$reset_color%}'
 fi
 
 # export MANPATH="/usr/local/man:$MANPATH"

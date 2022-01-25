@@ -12,11 +12,11 @@ function tinker() {
 }
 
 function hidePrompt() {
-    export HIDE_PROMPT_FOLDER=true
+    export HIDE_PROMPT_FOLDER=1
     reloadshell
 }
 
 function showPrompt() {
-    export HIDE_PROMPT_FOLDER=false
+    export HIDE_PROMPT_FOLDER=0
     reloadshell
 }
