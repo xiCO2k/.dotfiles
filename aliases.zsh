@@ -35,7 +35,7 @@ alias mfs="artisan migrate:fresh --seed"
 alias p="pest"
 alias pf="pest --filter "
 alias pp="pest --parallel"
-alias pc="pest --coverage"
+alias pc="XDEBUG_MODE=coverage pest --coverage"
 alias pst="phpstan analyse"
 alias pcs="php-cs-fixer fix ."
 
@@ -49,7 +49,9 @@ alias dc="docker compose"
 
 # Git
 alias g="git"
-alias nah='git reset --hard;git clean -df'
+alias nah="git reset --hard;git clean -df"
+alias gau="git remote add upstream";
+alias gpu="git pull upstream";
 
 # Brew
 alias b="brew"
