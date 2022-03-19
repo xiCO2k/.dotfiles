@@ -23,13 +23,16 @@ pecl install imagick
 pecl install pcov
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet
+/usr/local/bin/composer global require laravel/installer laravel/valet spatie/global-ray
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
+# Install Global Ray
+$HOME/.composer/vendor/bin/global-ray install
+
 # Install global Node packages
-/usr/local/bin/npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli @prettier/plugin-php
+/usr/local/bin/npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
