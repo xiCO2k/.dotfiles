@@ -50,6 +50,7 @@ alias dc="docker compose"
 # Git
 alias g="git"
 alias nah="git reset --hard;git clean -df"
+alias gs="git status"
 alias gau="git remote add upstream";
 alias gpu="git pull upstream";
 
