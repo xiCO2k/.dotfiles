@@ -49,8 +49,6 @@ touch $HOME/.hushlogin
 git config --global user.name "Francisco Madeira"
 git config --global user.email "xico2k@gmail.com"
 
-git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan
-
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
