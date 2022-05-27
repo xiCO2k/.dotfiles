@@ -28,9 +28,6 @@ pecl install pcov
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Install Global Ray
-$HOME/.composer/vendor/bin/global-ray install
-
 # Install global Node packages
 /usr/local/bin/npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli
 
@@ -51,6 +48,8 @@ touch $HOME/.hushlogin
 # Set Git Config User
 git config --global user.name "Francisco Madeira"
 git config --global user.email "xico2k@gmail.com"
+
+git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
