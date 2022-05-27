@@ -23,7 +23,7 @@ pecl install imagick
 pecl install pcov
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet spatie/global-ray
+/usr/local/bin/composer global require laravel/installer laravel/valet
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
