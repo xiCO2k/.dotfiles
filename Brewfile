@@ -51,7 +51,6 @@ cask 'alfred'
 cask 'blackhole'
 cask 'caprine'
 cask 'camo-studio'
-cask 'coconutbattery'
 cask 'discord'
 cask 'docker'
 cask 'dropbox'
@@ -68,6 +67,7 @@ cask 'flux'
 cask 'java'
 cask 'little-snitch'
 cask 'slack'
+cask 'stats'
 cask 'stremio'
 cask 'sublime-text'
 cask 'tableplus'
@@ -102,7 +102,6 @@ cask 'font-montserrat'
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
-mas 'Microsoft To Do', id: 1274495053
 mas 'MainStage 3', id: 634159523
 mas 'Dato', id: 1470584107
 mas 'Moom', id: 419330170
