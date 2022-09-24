@@ -37,7 +37,6 @@ alias pf="pest --filter "
 alias pp="pest --parallel"
 alias pc="XDEBUG_MODE=coverage pest --coverage"
 alias pst="phpstan analyse"
-alias pcs="php-cs-fixer fix ."
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
