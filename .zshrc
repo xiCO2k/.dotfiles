@@ -111,9 +111,5 @@ export LANG=en_US.UTF-8
 
 export ANDROID_SDK=$HOME/Library/Android/sdk
 
-# Golang
-export GOPATH=$HOME/go # don't forget to change your path correctly!
-export GOROOT=/usr/local/opt/go/libexec
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
