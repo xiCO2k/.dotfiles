@@ -23,13 +23,13 @@ pecl install imagick
 pecl install pcov
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet
+composer global require laravel/installer laravel/valet
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
 # Install global Node packages
-/usr/local/bin/npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli
+npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
@@ -51,4 +51,4 @@ git config --global user.email "xico2k@gmail.com"
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source .macos
+#source .macos
