@@ -36,10 +36,12 @@ alias p="pest"
 alias pf="pest --filter "
 alias pp="pest --parallel"
 alias pc="XDEBUG_MODE=coverage pest --coverage"
+alias ppc="XDEBUG_MODE=coverage pest --parallel --coverage"
 alias pst="phpstan analyse"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
+alias lint="npm run lint -- --fix"
 
 # Docker
 alias docker-composer="docker compose"

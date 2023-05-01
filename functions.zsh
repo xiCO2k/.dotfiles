@@ -11,6 +11,19 @@ function tinker() {
   fi
 }
 
+function commit() {
+   commitMessage="$*"
+
+   git add .
+
+   if [ "$commitMessage" = "" ]; then
+      aicommits
+      return
+   fi
+
+   eval "git commit -a -m '${commitMessage}'"
+}
+
 function hidePrompt() {
     export HIDE_PROMPT_FOLDER=1
     reloadshell

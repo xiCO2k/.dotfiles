@@ -29,7 +29,7 @@ composer global require laravel/installer laravel/valet
 $HOME/.composer/vendor/bin/valet install
 
 # Install global Node packages
-npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli
+npm install -g npm-check-updates expo-cli eas-cli http-server prettier wifi-password-cli aicommits
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
