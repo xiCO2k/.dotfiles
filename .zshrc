@@ -80,8 +80,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 if [ "$HIDE_PROMPT_FOLDER" = 1 ]; then
-    PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+    PROMPT="%(?:%{$fg_bold[green]%}✗ :%{$fg_bold[red]%}✗ )"
     PROMPT+='%{$reset_color%}'
+else
+    PROMPT="%{$fg_bold[cyan]%}%c%{$reset_color%}"
+    PROMPT+=' $(git_prompt_info)'
 fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
