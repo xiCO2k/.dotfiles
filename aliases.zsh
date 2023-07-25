@@ -37,6 +37,7 @@ alias pf="pest --filter "
 alias pp="pest --parallel"
 alias pc="XDEBUG_MODE=coverage pest --coverage"
 alias ppc="XDEBUG_MODE=coverage pest --parallel --coverage"
+alias ptc="pest --type-coverage"
 alias pst="phpstan analyse"
 
 # JS
