@@ -33,3 +33,11 @@ function showPrompt() {
     export HIDE_PROMPT_FOLDER=0
     reloadshell
 }
+
+function churchip() {
+    networksetup -setmanual Wi-Fi 172.16.0.203 255.240.0.0 172.16.0.200
+}
+
+function dhcp() {
+    networksetup -setdhcp Wi-Fi
+}
