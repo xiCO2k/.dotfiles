@@ -13,6 +13,7 @@ alias cp='cp -v'
 
 alias chmox='chmod -x'
 
+alias vim="nvim"
 alias v="vim"
 alias ungz="gunzip -k"
 alias hosts='subl /etc/hosts'
@@ -21,7 +22,7 @@ alias localip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
-alias reloadshell="source $HOME/.zshrc"
+alias reloadshell="omz reload"
 alias reloaddns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 
