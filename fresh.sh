@@ -39,5 +39,9 @@ ln -s ./.mackup.cfg $HOME/.mackup.cfg
 mkdir -p "$HOME/Library/Application Support/com.mitchellh.ghostty"
 ln -sf $HOME/.dotfiles/ghostty.config "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 
+# Configure gh CLI aliases
+gh alias set open 'browse'
+gh alias set desktop '!open -a "GitHub Desktop" "$(git rev-parse --show-toplevel)"'
+
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
