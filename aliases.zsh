@@ -13,7 +13,7 @@ alias cp='cp -v'
 
 alias chmox='chmod -x'
 
-alias vim="nvim"
+# alias vim="nvim"
 alias v="vim"
 alias ungz="gunzip -k"
 alias hosts='subl /etc/hosts'
@@ -34,10 +34,11 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias a="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
 alias p="pest"
-alias pf="pest --filter "
-alias pp="pest --parallel"
+alias pf="XDEBUG_MODE=coverage pest --filter "
+alias pp="XDEBUG_MODE=coverage pest --parallel"
 alias pc="XDEBUG_MODE=coverage pest --coverage"
-alias ppc="XDEBUG_MODE=coverage pest --parallel --coverage"
+alias ppc="XDEBUG_MODE=coverage pest --parallel --coverage --compact"
+alias pfe="pest --without-exception-handling --filter "
 alias ptc="pest --type-coverage"
 alias pst="phpstan analyse"
 
