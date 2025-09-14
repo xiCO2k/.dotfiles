@@ -1,0 +1,40 @@
+# Ayu Mirage Custom Theme for Ghostty
+# Converted from ayu-mirage-changed.itermcolors
+
+# Background and Foreground
+background = 10131a
+foreground = ecebec
+
+# Cursor
+cursor-color = f3ff00
+cursor-text = 373e4c
+
+# Selection
+selection-background = 2a3542
+selection-foreground = 58606a
+
+# ANSI Colors (0-7: normal, 8-15: bright)
+# Black
+palette = 0=#1a1e29
+palette = 8=#686868
+# Red
+palette = 1=#f28779
+palette = 9=#f28779
+# Green
+palette = 2=#bae67e
+palette = 10=#bae67e
+# Yellow
+palette = 3=#ffd580
+palette = 11=#ffd580
+# Blue
+palette = 4=#73d0ff
+palette = 12=#73d0ff
+# Magenta
+palette = 5=#d4bfff
+palette = 13=#d4bfff
+# Cyan
+palette = 6=#95e6cb
+palette = 14=#95e6cb
+# White
+palette = 7=#c7c7c7
+palette = 15=#ffffff

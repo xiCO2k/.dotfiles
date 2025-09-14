@@ -39,6 +39,10 @@ ln -s ./.mackup.cfg $HOME/.mackup.cfg
 mkdir -p "$HOME/Library/Application Support/com.mitchellh.ghostty"
 ln -sf $HOME/.dotfiles/ghostty.config "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 
+# Symlink Ghostty custom theme
+mkdir -p "$HOME/.config/ghostty/themes"
+ln -sf $HOME/.dotfiles/ayu-mirage-custom.theme "$HOME/.config/ghostty/themes/ayu-mirage-custom"
+
 # Configure gh CLI aliases
 gh alias set open 'browse'
 gh alias set desktop '!open -a "GitHub Desktop" "$(git rev-parse --show-toplevel)"'
