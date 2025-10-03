@@ -57,6 +57,7 @@ alias nah="git reset --hard;git clean -df"
 alias gs="git status"
 alias gau="git remote add upstream";
 alias gpu="git pull upstream";
+alias uncommit="git reset --soft HEAD~1";
 
 # Fast open
 alias o="open ."
