@@ -27,7 +27,7 @@ palette = 10=#bae67e
 palette = 3=#ffd580
 palette = 11=#ffd580
 # Blue
-palette = 4=#73d0ff
+palette = 4=#4a9bc8
 palette = 12=#73d0ff
 # Magenta
 palette = 5=#d4bfff
@@ -36,5 +36,5 @@ palette = 13=#d4bfff
 palette = 6=#95e6cb
 palette = 14=#95e6cb
 # White
-palette = 7=#c7c7c7
+palette = 7=#f0f0f0
 palette = 15=#ffffff

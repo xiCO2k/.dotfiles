@@ -31,13 +31,16 @@ alias dotfiles="cd $DOTFILES"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
+alias composer="herd composer"
+alias php="herd php"
 alias a="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
+alias pest="herd coverage ./vendor/bin/pest"
 alias p="pest"
-alias pf="XDEBUG_MODE=coverage pest --filter "
-alias pp="XDEBUG_MODE=coverage pest --parallel"
-alias pc="XDEBUG_MODE=coverage pest --coverage"
-alias ppc="XDEBUG_MODE=coverage pest --parallel --coverage --compact"
+alias pf="pest --filter "
+alias pp="pest --parallel"
+alias pc="herd coverage ./vendor/bin/pest --coverage"
+alias ppc="herd coverage ./vendor/bin/pest --parallel --coverage --compact"
 alias pfe="pest --without-exception-handling --filter "
 alias ptc="pest --type-coverage"
 alias pst="phpstan analyse"
@@ -74,3 +77,4 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 alias timestamp="date +%s"
 
 alias fix-spotlight-globally="find ~ -type d -path './.*' -prune -o -path './Pictures*' -prune -o -path './Library*' -prune -o -path '*node_modules/*' -prune -o -type d -name 'node_modules' -exec touch '{}/.metadata_never_index' \; -print"
+

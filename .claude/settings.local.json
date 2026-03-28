@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ghostty.org)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(ghostty +list-themes)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

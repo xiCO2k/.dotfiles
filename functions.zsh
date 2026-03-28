@@ -35,7 +35,7 @@ function showPrompt() {
 }
 
 function churchip() {
-    networksetup -setmanual Wi-Fi 172.16.0.203 255.240.0.0 172.16.0.200
+    networksetup -setmanual Wi-Fi 172.16.0.204 255.240.0.0 172.16.0.200
 }
 
 function dhcp() {
