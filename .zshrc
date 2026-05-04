@@ -136,3 +136,20 @@ export PATH="/Users/franciscomadeira/Library/Application Support/Herd/bin/":$PAT
 # Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/franciscomadeira/Library/Application Support/Herd/config/php/83/"
 
+export PATH="$HOME/.local/bin:$PATH"
+
+# Java (Android Studio JDK)
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# Android SDK
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
+
+
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/franciscomadeira/Library/Application Support/Herd/config/php/85/"
+
+export PEST_TIA=true
+export PEST_TIA_FILTERED=true
+export PEST_TIA_BASELINED=true
