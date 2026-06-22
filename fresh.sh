@@ -53,7 +53,11 @@ if command -v mysql >/dev/null 2>&1; then
     mysqladmin ping --silent 2>/dev/null && break
     sleep 1
   done
-  mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;" || true
+  # Prefer the legacy mysql_native_password plugin; fall back to the default
+  # auth plugin on MySQL 8.4+/9.x where it is disabled/removed by default.
+  mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;" 2>/dev/null \
+    || mysql -u root -e "ALTER USER root@localhost IDENTIFIED BY 'password'; FLUSH PRIVILEGES;" \
+    || true
 fi
 
 # Create a projects directory
@@ -72,8 +76,8 @@ ln -sf $HOME/.dotfiles/ayu-mirage-custom.theme "$HOME/.config/ghostty/themes/ayu
 
 # Configure gh CLI aliases (only if gh is installed)
 if command -v gh >/dev/null 2>&1; then
-  gh alias set open 'browse'
-  gh alias set desktop '!open -a "GitHub Desktop" "$(git rev-parse --show-toplevel)"'
+  gh alias set --clobber open 'browse'
+  gh alias set --clobber desktop '!open -a "GitHub Desktop" "$(git rev-parse --show-toplevel)"'
 fi
 
 # Set macOS preferences - we will run this last because this will reload the shell
