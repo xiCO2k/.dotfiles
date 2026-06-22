@@ -79,8 +79,8 @@ cask 'font-open-sans'
 cask 'font-roboto'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+cask 'font-source-sans-3' # formerly font-source-sans-pro
+cask 'font-source-serif-4' # formerly font-source-serif-pro
 cask 'font-ibm-plex'
 cask 'font-montserrat'
 
