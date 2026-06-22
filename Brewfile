@@ -53,8 +53,6 @@ cask 'loom'
 cask 'ghostty'
 cask 'firefox'
 cask 'flux-app' # formerly flux
-# little-snitch is installed separately in fresh.sh — its DMG download
-# occasionally 404s, which would otherwise abort the whole `brew bundle`.
 cask 'slack'
 cask 'stats'
 cask 'raycast'

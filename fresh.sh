@@ -41,10 +41,6 @@ export HOMEBREW_NO_INSTALL_CLEANUP=1
 # Install all our dependencies with bundle (See Brewfile)
 brew bundle --file ./Brewfile
 
-# Install little-snitch separately so a transient DMG download failure doesn't
-# abort the whole bundle. Ignore failures here.
-brew install --cask little-snitch || echo "little-snitch install failed (download may be temporarily unavailable); install it manually later."
-
 # Set default MySQL root password and auth type (only if mysql is installed)
 if command -v mysql >/dev/null 2>&1; then
   brew services start mysql || true
