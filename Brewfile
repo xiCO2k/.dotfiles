@@ -85,9 +85,6 @@ cask 'font-ibm-plex'
 cask 'font-montserrat'
 
 # Mac App Store
-mas 'Keynote', id: 409183694
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
 mas 'MainStage 3', id: 634159523
 mas 'Dato', id: 1470584107
 mas 'Moom', id: 419330170
