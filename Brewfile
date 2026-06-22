@@ -42,17 +42,17 @@ brew 'wrk'
 # Apps
 cask 'camo-studio'
 cask 'discord'
-cask 'docker'
+cask 'docker-desktop' # formerly docker
 cask 'dropbox'
 cask 'android-studio'
 cask 'android-platform-tools'
 cask 'google-chrome'
-cask 'handbrake'
+cask 'handbrake-app' # formerly handbrake
 cask 'imageoptim'
 cask 'loom'
 cask 'ghostty'
 cask 'firefox'
-cask 'flux'
+cask 'flux-app' # formerly flux
 # little-snitch is installed separately in fresh.sh — its DMG download
 # occasionally 404s, which would otherwise abort the whole `brew bundle`.
 cask 'slack'
@@ -69,7 +69,7 @@ cask 'zoom'
 # Quicklook
 cask 'qlcolorcode'
 cask 'qlmarkdown'
-cask 'quicklook-json'
+# quicklook-json was disabled by Homebrew on 2025-12-23
 cask 'quicklook-csv'
 cask 'qlstephen'
 

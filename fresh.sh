@@ -26,8 +26,17 @@ if [ ! -d "$HOME/.dotfiles/plugins/zsh-autosuggestions" ]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.dotfiles/plugins/zsh-autosuggestions"
 fi
 
+# Install Rosetta 2 on Apple Silicon (needed by some Intel-only App Store apps/casks)
+if [ "$(uname -m)" = "arm64" ]; then
+  softwareupdate --install-rosetta --agree-to-license || true
+fi
+
 # Update Homebrew recipes
 brew update
+
+# Skip the post-install cleanup step, which can fail on a stale/corrupted
+# download cache and report a false "Installing <pkg> has failed!".
+export HOMEBREW_NO_INSTALL_CLEANUP=1
 
 # Install all our dependencies with bundle (See Brewfile)
 brew bundle --file ./Brewfile
@@ -39,6 +48,11 @@ brew install --cask little-snitch || echo "little-snitch install failed (downloa
 # Set default MySQL root password and auth type (only if mysql is installed)
 if command -v mysql >/dev/null 2>&1; then
   brew services start mysql || true
+  # Wait for the server to accept connections before altering the root user.
+  for _ in $(seq 1 30); do
+    mysqladmin ping --silent 2>/dev/null && break
+    sleep 1
+  done
   mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;" || true
 fi
 
