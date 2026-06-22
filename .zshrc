@@ -153,3 +153,6 @@ export HERD_PHP_85_INI_SCAN_DIR="/Users/franciscomadeira/Library/Application Sup
 export PEST_TIA=true
 export PEST_TIA_FILTERED=true
 export PEST_TIA_BASELINED=true
+
+# cmux
+source "$HOME/.cmux/cmux.sh"

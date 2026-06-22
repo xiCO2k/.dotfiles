@@ -1,8 +1,5 @@
-# Taps
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'homebrew/bundle'
+# Note: homebrew/cask, homebrew/cask-fonts, homebrew/cask-versions and
+# homebrew/bundle taps were deprecated/merged into core and are no longer needed.
 
 # Binaries
 brew 'awscli'
@@ -56,7 +53,8 @@ cask 'loom'
 cask 'ghostty'
 cask 'firefox'
 cask 'flux'
-cask 'little-snitch'
+# little-snitch is installed separately in fresh.sh — its DMG download
+# occasionally 404s, which would otherwise abort the whole `brew bundle`.
 cask 'slack'
 cask 'stats'
 cask 'raycast'
